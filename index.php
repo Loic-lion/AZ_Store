@@ -9,33 +9,47 @@
 </head>
 
 <body>
-    <?php include 'display.php';    ?>
+    <?php include 'display-header.php';    ?>
     <main>
         <section class="container_leading">
-            
+            <div class="container_leading_slogan">
+                <h1> SHOE THE RIGHT <p class="container_leading_slogan_one">ONE</p>.</h1>
+                <button class="container_leading_button">See our store</button>
+            </div>
+            <div class="container_leading_photo">
+                <p>NIKE</p>
+                <div>
+                    <img class="container_leading_photo_shoe" src="./assets/img/shoe_one.png">
+
+                </div>
+            </div>
+            <hr>
         </section>
-        <section class="container_store"></section>
+        <section class="container_store">
+
+        </section>
         <section class="container_pub">
-            <img src="./assets/img/shoe_two.png">
+            <img class="container_pub_shoe" src="./assets/img/shoe_two.png">
             <h2> WE PROVIDE YOU THE BEST QUALITY. </h2>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ratione eos consequuntur facilis voluptatum doloremque, officia nobis libero itaque, voluptas, beatae blanditiis! </p>
         </section>
         <section class="container_opinion">
             <div class="container_opinion_cellule">
-                <img src="./assets/img/image-emily.jpg">
+                <img class="container_opinion_cellule_person" src="./assets/img/image-emily.jpg">
                 <h3>Emily from xyz </h3>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quam labore soluta eum optio. </p>
             </div>
-            <img src="./assets/img/image-thomas.jpg">
+            <img class="container_opinion_cellule_person" src="./assets/img/image-thomas.jpg">
             <h3>Thomas from corporate </h3>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quam labore soluta eum optio. </p>
             </div>
-            <img src="./assets/img/image-jennie.jpg">
+            <img class="container_opinion_cellule_person" src="./assets/img/image-jennie.jpg">
             <h3>Jennie from Nike </h3>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quam labore soluta eum optio. </p>
             </div>
         </section>
     </main>
+    <?php include 'display-footer.php';    ?>
 </body>
 
 </html>
