@@ -93,9 +93,6 @@ if(isset($_GET['submit'])) {
         }
     } else {
         unset($_SESSION['shopping-cart']);
-        echo '<div class="display">
-                <p>Thank you for your order</p>
-            </div>';
 
         echo '
         <div class="result">
@@ -114,17 +111,42 @@ if(isset($_GET['submit'])) {
         retrieveItems();
     }
 }
+session_start();
 
 function retrieveItems()
 {
     $jsonFile = './assets/json/cart.json';
     $data = file_get_contents($jsonFile);
     $items = json_decode($data, true);
-    $jsonItems = json_encode($items, JSON_PRETTY_PRINT);
-    header('Content-Type: checkout.json');
-    echo $jsonItems;
+
+    echo '<h2>Order</h2>';
+    echo '<ul>';
+
+    foreach ($items as $item) {
+        echo '<li>';
+        echo '<h3>' . $item['product'] . '</h3>';
+        echo '<img src="' . $item['image_url'] . '">';
+        echo '<p>Prix: ' . $item['price'] . '</p>';
+        echo '<p>Quantité: ' . $item['number'] . '</p>';
+        echo '</li>';
+    }
+
+    echo '</ul>';
+    $total = calculateTotal($items);
+    echo '<p>Total: ' . $total . ' euros</p><br>';
+    echo '<div class="display"><p>Thank you for your order</p></div>';
+    unset($_SESSION['shopping-cart']);
+}
+
+function calculateTotal($items)
+{
+    $total = 0;
+
+    foreach ($items as $item) {
+        $total += $item['price'];
+    }
+    return $total;
 }
 ?>
-
 </body>
 </html>
