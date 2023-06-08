@@ -21,6 +21,15 @@
         $city = $_GET['city'];
         $zipCode = $_GET['zip-code'];
         $country = $_GET['country'];
-        
-    }
+
+        $filterFirstname = filter_var($fullname, FILTER_SANITIZE_STRING);
+        $filterLastname = filter_var($lastname, FILTER_SANITIZE_STRING);
+        $filterEmail = filter_var($email, FILTER_SANITIZE_EMAIL);
+        $filterAddress = filter_var($address, FILTER_SANITIZE_STRING);
+        $filterCity = filter_var($city, FILTER_SANITIZE_STRING);
+        $filterZipCode = filter_var($zipCode, FILTER_SANITIZE_INT);
+        $filterCountry = filter_var($country, FI)
+
+
+
 ?>
