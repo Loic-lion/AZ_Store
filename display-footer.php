@@ -1,7 +1,7 @@
 <?php
 echo '
 <footer>
-<nav>
+<nav class=nav_bottom>
 <ul>
 <li><a href="index.php">Home</a></li>
 <li><a href="index.php">About</a></li>
@@ -10,4 +10,4 @@ echo '
 </ul>
 </nav>
 </footer>'
-?>;
+?>

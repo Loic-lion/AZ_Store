@@ -1,6 +1,16 @@
+body {
+  color: white;
+  background-image: linear-gradient(to bottom, #111827, #000000);
+}
 header {
   display: flex;
-  background-color: rgb(189, 43, 43);
+  background-color: #111827;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid;
+  border-bottom-color: #5697ff;
+  height: 40px;
+
   .nav_top {
     display: flex;
     ul {
@@ -8,6 +18,21 @@ header {
     }
     img {
       height: 20px;
+    }
+  }
+}
+footer {
+  display: flex;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid;
+  border-top-color: #5697ff;
+  height: 50px;
+  .nav_bottom {
+    display: flex;
+    ul {
+      display: flex;
     }
   }
 }
