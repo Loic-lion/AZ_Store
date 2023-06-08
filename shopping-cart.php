@@ -25,6 +25,7 @@
 
     function displayShoppingCart()
     {
+        ob_clean();
         global $jsonFile;
         $json = file_get_contents($jsonFile);
         $cart = json_decode($json, true);
@@ -78,12 +79,10 @@
         $itemIndex = $_POST['remove_item'];
         removeCartItem($itemIndex);
     }
+    displayShoppingCart()
+        ?>
 
-    ?>
 
-    <form action="shopping-cart.php" method="post">
-        <input type="submit" name="submit" value="Cliquez ici" />
-    </form>
 </body>
 
 </html>
