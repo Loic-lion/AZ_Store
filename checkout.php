@@ -12,34 +12,34 @@
     <form method="GET" action="checkout.php">
        <p class="form__field">
            <label for="firstname" class="form__label">Enter your firstname :</label>
-           <input id="firstname" name="firstname" type="text" class="form__input">
+           <input id="firstname" name="firstname" type="text" class="form__input" required>
        </p>
        <p class="form__field">
            <label for="lastname" class="form__label">Enter your lastname:</label>
-           <input id="lastname" name="lastname" type="text" class="form__input">
+           <input id="lastname" name="lastname" type="text" class="form__input" required>
        </p>
        <p class="form__field">
            <label for="email" class="form__label">Enter your email :</label>
-           <input id="email" name="email" type="email" class="form__input">
+           <input id="email" name="email" type="email" class="form__input" required>
        </p>
        <p class="form__field">
            <label for="address" class="form__label">Enter your address :</label>
-           <input id="address" name="address" type="text" class="form__input">
+           <input id="address" name="address" type="text" class="form__input" required>
        </p>
        <p class="form__field">
            <label for="city" class="form__label">Enter your city :</label>
-           <input id="city" name="city" type="text" class="form__input">
+           <input id="city" name="city" type="text" class="form__input" required>
        </p>
        <p class="form__field">
            <label for="zip-code" class="form__label">Enter your zip-code :</label>
-           <input id="zip-code" name="zip-code" type="number" class="form__input">
+           <input id="zip-code" name="zip-code" type="number" class="form__input" required>
        </p>
        <p class="form__field">
            <label for="country" class="form__label">Enter your country :</label>
-           <input id="country" name="country" type="text" class="form__input">
+           <input id="country" name="country" type="text" class="form__input" required>
        </p>
        <p class="form__submit">
-           <input name="submit" value="Submit" type="submit" class="form__button">
+           <input name="submit" value="Submit" type="submit" class="form__button" required>
        </p>
     </form>
 </div>
