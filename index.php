@@ -53,6 +53,7 @@
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quam labore soluta eum optio. </p>
             </div>
         </section>
+        <?php include 'add-to-cart.php'; ?>
     </main>
     <?php include 'display-footer.php';    ?>
 </body>

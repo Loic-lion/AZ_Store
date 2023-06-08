@@ -28,6 +28,7 @@ $items = [
 
 foreach ($items as $item) {
     echo '<div class="container_store_product">';
+    echo '<form method="post" action="index.php">';
     echo '<img src="' . $item['image_url'] . '" alt="' . $item['product'] . '">';
     echo '<div class="container_store_product_div">';
     echo '<div class="container_store_product_div_info">';
@@ -35,7 +36,10 @@ foreach ($items as $item) {
     echo '<p>' . $item['price'] . '€</p>';
     echo '</div>';
     echo '<div class="container_store_product_div">';
-    echo '<button class="container_store_product_button"> Add to cart </button>';
+    echo '<form method="post" action="add_to_cart.php">';
+    echo '<input type="hidden" name="productId" value="' . $item['id'] . '">';
+    echo '<button class="container_store_product_button" type="submit"> Add to cart </button>';
+    echo '</form>';
     echo '</div>';
     echo '</div>';
     echo '</div>';
