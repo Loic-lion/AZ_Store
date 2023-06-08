@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Checkout</title>
 </head>
 <body>
 
@@ -65,7 +65,7 @@ if(isset($_GET['submit'])) {
     $errors = [];
 
     if(empty($filterFirstname)) {
-        $error[] = 'Fullname is required';
+        $error[] = 'Firstname is required';
     };
     if(empty($filterLastname)) {
         $error[] = 'Lastname is required';
