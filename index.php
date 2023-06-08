@@ -9,9 +9,6 @@
 </head>
 
 <body>
-    <?php include 'checkout.php';
-    include 'shopping-cart.php';
-    ?>
 </body>
 
 </html>
