@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  background-color: rgb(184, 184, 184);
+  .nav_top {
+    display: flex;
+    ul {
+      display: flex;
+    }
+    img {
+      height: 20px;
+    }
+  }
+}

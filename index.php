@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/scss/css/main.css" />
     <title>AZ Store</title>
+
 </head>
 
 <body>
@@ -13,7 +15,7 @@
     <main>
         <section class="container_leading">
             <div class="container_leading_slogan">
-                <h1> SHOE THE RIGHT <p class="container_leading_slogan_one">ONE</p>.</h1>
+                <h1> SHOE THE RIGHT <span class="container_leading_slogan_blue">ONE</span>.</h1>
                 <button class="container_leading_button">See our store</button>
             </div>
             <div class="container_leading_photo">
@@ -26,7 +28,10 @@
             <hr>
         </section>
         <section class="container_store">
-
+            <h5>
+                <span class="contaner_store_blue">Our</span> last products
+            </h5>
+            <?php include 'display-product.php';    ?>
         </section>
         <section class="container_pub">
             <img class="container_pub_shoe" src="./assets/img/shoe_two.png">

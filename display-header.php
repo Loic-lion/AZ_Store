@@ -1,7 +1,7 @@
 <?php
 echo '<header>
 <p>AZ[store]</p>
-<nav> 
+<nav class="nav_top"> 
 <ul>
   <li><a href="index.php">Home</a></li>
   <li><a href="index.php">About</a></li>
