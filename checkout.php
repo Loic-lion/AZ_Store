@@ -13,23 +13,45 @@
 </div>
 
 <?php
-    if(isset($_GET['submit'])){
-        $firstname = $_GET['firstname'];
-        $lastname = $_GET['lastname'];
-        $email = $_GET['email'];
-        $address = $_GET['adress'];
-        $city = $_GET['city'];
-        $zipCode = $_GET['zip-code'];
-        $country = $_GET['country'];
+if(isset($_GET['submit'])) {
+    $firstname = $_GET['firstname'];
+    $lastname = $_GET['lastname'];
+    $email = $_GET['email'];
+    $address = $_GET['adress'];
+    $city = $_GET['city'];
+    $zipCode = $_GET['zip-code'];
+    $country = $_GET['country'];
 
-        $filterFirstname = filter_var($fullname, FILTER_SANITIZE_STRING);
-        $filterLastname = filter_var($lastname, FILTER_SANITIZE_STRING);
-        $filterEmail = filter_var($email, FILTER_SANITIZE_EMAIL);
-        $filterAddress = filter_var($address, FILTER_SANITIZE_STRING);
-        $filterCity = filter_var($city, FILTER_SANITIZE_STRING);
-        $filterZipCode = filter_var($zipCode, FILTER_SANITIZE_INT);
-        $filterCountry = filter_var($country, FI)
+    $filterFirstname = filter_var($fullname, FILTER_SANITIZE_STRING);
+    $filterLastname = filter_var($lastname, FILTER_SANITIZE_STRING);
+    $filterEmail = filter_var($email, FILTER_SANITIZE_EMAIL);
+    $filterAddress = filter_var($address, FILTER_SANITIZE_STRING);
+    $filterCity = filter_var($city, FILTER_SANITIZE_STRING);
+    $filterZipCode = filter_var($zipCode, FILTER_SANITIZE_INT);
+    $filterCountry = filter_var($country, FILTER_SANITIZE_STRING);
 
+    $errors = [];
 
-
+    if(empty($filterFirstname)) {
+        $error[] = 'Fullname is required';
+    };
+    if(empty($$filterLastname)) {
+        $error[] = 'Lastname is required';
+    };
+    if(empty($filterEmail)) {
+        $error[] = 'Email is required';
+    };
+    if(empty($filterAddress)) {
+        $error[] = 'The address is required';
+    };
+    if(empty($filterCity)) {
+        $error[] = 'City is required';
+    };
+    if(empty($filterZipCode)) {
+        $error[] = 'ZipCode is required';
+    };
+    if(empty($filterCountry)) {
+        $error[] = 'Country is required';
+    };
+}
 ?>
