@@ -76,10 +76,12 @@ if(isset($_GET['submit'])) {
         foreach($errors as $error) {
             echo '<span class="error">'.$error.'</span>';
         }
-        exit;
-    };
+
+    }else {
+
+    }unset($_SESSION['shopping-cart']);
+        echo '<div class="display">
+                <p>Thank you for your order</p>
+            </div>';
 }
 ?>
-<div class="display">
-        <p>Thank you for your order</p>
-</div>
