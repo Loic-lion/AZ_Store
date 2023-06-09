@@ -1,22 +1,3 @@
-
-
-
-Creating an Online shoe store, the client must be able to add an item to their cart, remove an item from it and checkout.
-
-
-
-
-## Authors
-
-
-- [Loic Lion](https://github.com/Loic-lion)
-- 
-- 
-
-
-
-
-![App Screenshot](assets/img/Screenshot.png)
 # AZ_Store
 ## Projet en groupe
 __Création d'un e-shop avec de l'html, du scss et du php.__
@@ -37,4 +18,4 @@ __Le repo comprend:__
    * un fichier json
 
 ## Aperçu
-![alt tag](https://github.com/Loic-lion/didlydoo/blob/main/img%20readme/screenshot.png?raw=true)
+WIP
