@@ -19,3 +19,42 @@
   padding: 15px 10px 15px 10px;
   cursor: pointer;
 }
+.Cart__Item {
+  &__Remove {
+    background-image: linear-gradient(to right, #3b81f5, #1e3b8b);
+    color: white;
+
+    border-radius: 3px;
+    border-style: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  &__Substract {
+    background-image: linear-gradient(to right, #d32e2e, #7a1d1d);
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  &__Add {
+    background-image: linear-gradient(to right, #51f53b, #286b1f);
+    color: white;
+
+    border-radius: 3px;
+    border-style: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+.Cart__Confirm {
+  background-image: linear-gradient(to right, #3b81f5, #1e3b8b);
+  color: white;
+  width: 110px;
+  padding: 10px 5px 10px 5px;
+  border-radius: 3px;
+  border-style: none;
+  font-size: 14px;
+  cursor: pointer;
+}
