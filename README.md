@@ -1,6 +1,6 @@
 # AZ_Store
 ## Projet en groupe
-__Création d'un e-shop avec de l'html, du scss et du php.__
+__Création d'un e-shop multi-pages avec de l'html, du scss et du php.__
 * Réalisé par [Delphine Lecorney](https://github.com/DelphineLecorney), [Sylvain Jacobs](https://www.github.com/Alphit7) et [Lion Loïc](https://github.com/Loic-lion)
 * 2 jours de travail (08/06/23 et 09/06/2023 )
 * Réalisé au cours de la formation BeCode
