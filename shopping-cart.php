@@ -96,12 +96,13 @@
         global $jsonFile;
         $json = file_get_contents($jsonFile);
         $cart = json_decode($json, true);
-
-        if (isset($cart[$index])) {
-            $cart[$index]["number"] = $cart[$index]["number"] - 1;
-            saveShoppingCart($cart);
+        if ($cart[$index]["number"] > 1) {
+            if (isset($cart[$index])) {
+                $cart[$index]["number"] = $cart[$index]["number"] - 1;
+                saveShoppingCart($cart);
+            }
+            displayShoppingCart();
         }
-        displayShoppingCart();
     }
 
 
