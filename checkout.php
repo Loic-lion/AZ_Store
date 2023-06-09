@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <?php include 'display.php';    ?>
+    <?php include 'display.php'    ?>
 </body>
 
 </html>

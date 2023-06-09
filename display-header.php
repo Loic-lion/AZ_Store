@@ -7,8 +7,8 @@ echo '<header>
   <li><a href="index.php">About</a></li>
   <li><a href="index.php">Product</a></li>
   <li><a href="index.php">Contact</a></li>
-  <li><a href="shopping-cart.php"><img src="./assets/img/shopping-cart.svg">Login</a><li>
 </ul>
 </nav>
+<a href="shopping-cart.php"><img src="./assets/img/shopping-cart.svg">Login</a>
 </header>'
-?>;
+?>
