@@ -44,6 +44,7 @@ main {
   .container_leading {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
     .container_leading_slogan {
       display: flex;
@@ -99,20 +100,25 @@ main {
   .container_store {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     &_product {
       display: flex;
-      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
       height: 200px;
       width: 250px;
       margin-right: 60px;
+
       &_div {
-        margin-top: 20px;
         display: flex;
+        margin-left: 50px;
       }
       &_photo {
         background-color: rgba(240, 248, 255, 0.021);
         box-shadow: 1px 3px 12px rgba(3, 3, 3, 0.527);
         width: 150px;
+        margin-left: 75px;
+        margin-bottom: 40px;
         img {
           height: 150px;
         }
@@ -145,6 +151,7 @@ main {
   .container_opinion {
     display: flex;
     margin-top: 80px;
+    flex-wrap: wrap;
 
     &_cellule {
       display: flex;

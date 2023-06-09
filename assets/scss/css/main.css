@@ -201,6 +201,7 @@ main {
 main .container_leading {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 main .container_leading .container_leading_slogan {
   display: flex;
@@ -255,22 +256,26 @@ main h5 .contaner_store_blue {
 main .container_store {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 main .container_store_product {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
   height: 200px;
   width: 250px;
   margin-right: 60px;
 }
 main .container_store_product_div {
-  margin-top: 20px;
   display: flex;
+  margin-left: 50px;
 }
 main .container_store_product_photo {
   background-color: rgba(240, 248, 255, 0.021);
   box-shadow: 1px 3px 12px rgba(3, 3, 3, 0.527);
   width: 150px;
+  margin-left: 75px;
+  margin-bottom: 40px;
 }
 main .container_store_product_photo img {
   height: 150px;
@@ -301,6 +306,7 @@ main .container_pub p {
 main .container_opinion {
   display: flex;
   margin-top: 80px;
+  flex-wrap: wrap;
 }
 main .container_opinion_cellule {
   display: flex;

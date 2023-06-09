@@ -28,7 +28,7 @@ $items = [
 
 foreach ($items as $item) {
     echo '<div class="container_store_product">';
-    echo '<form method="post" action="index.php">';
+    echo '<form class="container_store_product_form" method="post" action="index.php">';
     echo '<div class="container_store_product_photo">';
     echo '<img src="' . $item['image_url'] . '" alt="' . $item['product'] . '">';
     echo '</div>';
