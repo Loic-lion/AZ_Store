@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <?php include 'display-header.php'    ?>
     <main>
         <section class="container_leading">
@@ -61,6 +62,7 @@
         <?php include 'add-to-card.php' ?>
     </main>
     <?php include 'display-footer.php'    ?>
+
 </body>
 
 </html>
